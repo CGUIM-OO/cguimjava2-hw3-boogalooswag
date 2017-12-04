@@ -26,6 +26,61 @@ public class HW3 {
 		//Constructor (5 points)
 		//printCard (5 points)
 		//getSuit (5 points)
+		
+		
+		class Deck{
+			private ArrayList<Card> cards;
+			//TODO: Please implement the constructor (30 points)
+			public Deck(int nDeck){
+				cards=new ArrayList<Card>();
+				//1 Deck have 52 cards, https://en.wikipedia.org/wiki/Poker
+				//Hint: Use new Card(x,y) and 3 for loops to add card into deck
+				//Sample code start
+				//Card card=new Card(1,1); ->means new card as clubs ace
+				//cards.add(card);
+				//Sample code end
+
+			}	
+			//TODO: Please implement the method to print all cards on screen (10 points)
+			public void printDeck(){
+				//Hint: print all items in ArrayList<Card> cards, 
+				//TODO: please implement and reuse printCard method in Card class (5 points)
+
+			}
+			public ArrayList<Card> getAllCards(){
+				return cards;
+			}
+		}
+		/**
+		 * Description: TODO: please add description here
+		 */
+		class Card{
+			private int suit; //Definition: 1~4, Clubs=1, Diamonds=2, Hearts=3, Spades=4
+			private int rank; //1~13
+			/**
+			 * @param s suit
+			 * @param r rank
+			 */
+			public Card(int s,int r){
+				suit=s;
+				rank=r;
+			}	
+			//TODO: 1. Please implement the printCard method (20 points, 10 for suit, 10 for rank)
+			public void printCard(){
+				//Hint: print (System.out.println) card as suit,rank, for example: print 1,1 as Clubs Ace
+
+			}
+			public int getSuit(){
+				return suit;
+			}
+			public int getRank(){
+				return rank;
+			
+		}
+		public Card getOneCard() {
+			// TODO Auto-generated method stub
+			return null;
+		
 		Card newCard=deck.getOneCard();
 		newCard.printCard();
 		Card newCard2=deck.getOneCard();

@@ -1,9 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Scanner;
-import java.util.Random;
-
-
+//import java.util.Scanner;
 
 /**
  * @author TODO: please add student ID and name here
@@ -17,7 +14,6 @@ public class HW3 {
 		int nDeck=1;
 		//TODO: please add new fields and methods to Deck class (35)
 		//usedCard (5 points)
-		
 		//nUsed (5 points)
 		//getOneCard (10 points)
 		//shuffle (10 points)
@@ -154,9 +150,4 @@ public class HW3 {
 		return isCorrect;
 	}
 
-
-
 }
-
-
-
